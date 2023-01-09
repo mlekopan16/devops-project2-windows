@@ -1,6 +1,6 @@
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "gusztavvargadr/iis-windows-server"
+  config.vm.box = "gusztavvargadr/windows-server"
 
   #switch off updates checking
   config.vm.box_check_update = false
