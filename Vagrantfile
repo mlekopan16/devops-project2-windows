@@ -21,5 +21,5 @@ Vagrant.configure("2") do |config|
   config.vm.communicator = "winrm"
 
   #install IIS services
-  config.vm.provision :shell, path: 'install.iis.ps1'
+  config.vm.provision :shell, path: 'install-iis.ps1'
 end
