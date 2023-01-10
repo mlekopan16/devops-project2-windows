@@ -22,4 +22,7 @@ Vagrant.configure("2") do |config|
 
   #install IIS services
   config.vm.provision :shell, path: 'install-iis.ps1'
+
+  #copy the index.html file to a IIS www folder
+  config.vm.provision 'file', source: 'index.html', destination: 'C:/inetpub/wwwroot/'
 end
